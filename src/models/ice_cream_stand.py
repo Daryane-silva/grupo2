@@ -12,6 +12,7 @@ class IceCreamStand(Restaurant):
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors_list
 
+    # verificar o if para validar o tamanho da lista
     def flavors_available(self):
         """Percorra a lista de sabores disponíveis e imprima."""
         if self.flavors:
@@ -21,6 +22,7 @@ class IceCreamStand(Restaurant):
         else:
             print("Estamos sem estoque atualmente!")
 
+    # verificar o if para validar o tamanho da lista
     def find_flavor(self, flavor):
         """Verifica se o sabor informado está disponível."""
         if self.flavors:
@@ -31,6 +33,7 @@ class IceCreamStand(Restaurant):
         else:
             print("Estamos sem estoque atualmente!")
 
+    # não precisa validar se o estoque está vazio
     def add_flavor(self, flavor):
         """Add o sabor informado ao estoque."""
         if self.flavors:

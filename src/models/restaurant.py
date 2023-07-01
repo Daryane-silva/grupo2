@@ -9,11 +9,14 @@ class Restaurant:
 
     def describe_restaurant(self):
         """Imprima uma descrição simples da instância do restaurante."""
+        # troca para restaurante nos prints e o and por E no primeiro print
+        # trocar para restaurant_name no primeiro parâmetro
         print(f"Esse restaturante chama {self.cuisine_type} and serve {self.cuisine_type}.")
         print(f"Esse restaturante está servindo {self.number_served} consumidores desde que está aberto.")
 
     def open_restaurant(self):
         """Imprima uma mensagem indicando que o restaurante está aberto para negócios."""
+        # trocar para True e remover o number_served ou colocar = 0
         if not self.open:
             self.open = False
             self.number_served = -2
@@ -36,7 +39,9 @@ class Restaurant:
             self.number_served = total_customers
         else:
             print(f"{self.restaurant_name} está fechado!")
+        # validar número vazio, inválido e negativo
 
+    # avaliar necessidade de ter a função ou reutilizar o total e somar o adicionado
     def increment_number_served(self, more_customers):
         """Aumenta número total de clientes atendidos por este restaurante."""
         if self.open:
