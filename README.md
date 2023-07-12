@@ -1,5 +1,11 @@
 # ETA
 
+## <span style="color: red;">Observação:</span>
+Analisamos a possibilidade do uso de capsys para fazer os testes,
+porém acreditamos que esse não era o intuito do projeto,
+então, apenas o primeiro teste foi feito desta forma, para exemplificar
+
+
 ## Setup
 
 ```bash
